@@ -11,6 +11,8 @@ Addon controller to talk to two Honeywell MPRLS0025PA00001A breakout boards http
 This could be a starting place for making your own pnumatic control board for your OpenPnP build.
 Supports the following commands:
 
+| Command               |                                      |
+| --------------------- | ------------------------------------ |
 | M42 P(relay) S(value) | Turn (relay) on (1) or off (0)       |
 | M112                  | Emergency Stop, turns all relays off |
 | M115                  | Firmware Inquiry                     |
@@ -30,6 +32,8 @@ Pin Usage:
 Addon controller for APA102 DotStar LEDs.
 Supports the following commands:
 
+| Command                  |                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------ |
 | M112                     | Emergency Stop, turns all LEDs off                                                   |
 | M115                     | Firmware Inquiry                                                                     |
 | M150 P(value) Q(segment) | Set ring brightness (0.0-1.0 or 0-765), optionally set a bitmask of LEDs to turn on. |
@@ -45,6 +49,8 @@ Pin Usage:
 # Pico-Combo
 Combines LED Ring and Pnumatics on one MCU.
 
+| Command                  |                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------ |
 | M42 P(relay) S(value)    | Turn (relay) on (1) or off (0)                                                       |
 | M112                     | Emergency Stop, turns all relays off                                                 |
 | M115                     | Firmware Inquiry                                                                     |
